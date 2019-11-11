@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 import java.net.URI;
 import java.util.*;
 
-class Base {
+class  Base {
 
     static Endpoints endpoints = new Endpoints();
     static String URI = "https://swapi.co/";
@@ -58,6 +58,7 @@ class Base {
                 input = in.nextLine();
                 if(input.equals("Y") || input.equals("y")){
                     Films.getFilmInfo_Full(films);
+                    break;
                 }
                 if(input.equals("N") || input.equals("n")){
                     break;
